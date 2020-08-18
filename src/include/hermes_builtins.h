@@ -45,5 +45,5 @@ AST_T* hermes_builtin_function_strrev(runtime_T* runtime, AST_T* self, dynamic_l
 
 AST_T* hermes_builtin_function_ssh(runtime_T* runtime, AST_T* self, dynamic_list_T* args);
 
-AST_T* INITIALIZED_NOOP;
+static AST_T* INITIALIZED_NOOP;
 #endif
