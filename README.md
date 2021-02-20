@@ -75,13 +75,13 @@ int age = 22;
 ```
 
 ### Bool example
-> Everyone knows what an boolean is.
+> Everyone knows what a boolean is.
 ```C
 bool x = 10 > 3;
 ```
 
 ### Float example
-> Everyone knows what an float is.
+> Everyone knows what a float is.
 ```C
 float x = 0.5;
 ```
@@ -140,7 +140,7 @@ wad(s, "functions");
 * free
 
 ### print
-> Prints what ever you gives it, example:
+> Prints whatever you gives it, example:
 ```C
 print("hello world");
 ```
@@ -181,7 +181,7 @@ visit(s);
 ```
 
 ### fopen
-> Open a file, here is an example to read the contents of a file:
+> Opens a file, here is an example to read the contents of a file:
 ```C
 object file = fopen("examples/functions.he", "r");
 string x = file.read();
@@ -191,7 +191,7 @@ fclose(file);
 ```
 
 ### fputs
-> Write string to file, example:
+> Writes a string to file, example:
 ```C
 object file = fopen("myfile.txt", "w+");
 
@@ -248,7 +248,7 @@ somefunction(void @(){ print("Hello from anonymous function"); });
 * while
 * for
 
-### new example
+### example of `new` keyword
 ```C
 object get_person(string name)
 {
@@ -266,7 +266,7 @@ object person = new get_person("Hanna");
 > The `new` statement will always return a new address of whatever is to the
 > right of the statement.
 
-### iterate example
+### example of `iterate` keyword
 ```C
 void char_iterator(char c)
 {
@@ -285,7 +285,7 @@ iterate x with char_iterator;
 iterate y with list_iterator;
 ```
 
-### iterate with index example
+### `iterate` with index example
 ```C
 list fruits = ["banana", "apple", "pear"]
 
@@ -297,7 +297,7 @@ void fruit_iterator(string name, int index)
 iterate fruits with fruit_iterator;
 ```
 
-### while example
+### example of `while` keyword
 ```C
 int x = 0;
 while (x < 10)
@@ -307,7 +307,7 @@ while (x < 10)
 }
 ```
 
-### for example
+### example of `for` keyword
 ```C
 for (int i = 0; i < 10; i+=1)
 {
@@ -318,7 +318,7 @@ for (int i = 0; i < 10; i+=1)
 ## Available locals & globals / constants
 * this
 
-### This example
+### example of `this` keyword
 > The `this` variable exists within local scopes.
 > Accessing `this` within a function will return the address of that function:
 ```C
@@ -344,7 +344,7 @@ person.myfunc();  // { object }
 ```
 
 ## Compositions
-> Hermes now also support compositions, like this:
+> Hermes now also supports compositions like this:
 ```C
 int add_2(int x)
 {
@@ -378,7 +378,7 @@ list cool_stuff = [
 ```
 
 ## Installing Hermes
-> To install Hermes on your system, simple run:
+> To install Hermes on your system, simply run:
 ```bash
 make && sudo make install
 ```
@@ -386,7 +386,7 @@ make && sudo make install
 ## Extensions
 * [curl](https://github.com/sebbekarlsson/hermes-curl)
 
-> To use an extension please have a look [here](DLOAD.md)
+> To use an extension please have a look at [here](DLOAD.md)
 
 ## Syntax Highlighting
 * [Vim](https://github.com/sebbekarlsson/hermes-vim)
