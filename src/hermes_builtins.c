@@ -10,6 +10,8 @@
 
 void init_builtins(runtime_T* runtime)
 {
+  if(INITIALIZED_NOOP == NULL) 
+    INITIALIZED_NOOP = init_ast(AST_NOOP);
   runtime_register_global_variable(runtime, "ver", "1.0.1");
 
   // GLOBAL FUNCTIONS
